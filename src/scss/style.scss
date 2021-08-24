@@ -1743,6 +1743,7 @@ iframe {
    width: 100%;
    max-width: 44.2em;
    min-height: 36em;
+   padding: 10px;
    box-shadow: 10px 10px 25px -3px rgba(149, 149, 201, 0.24), -11px 4px 25px -1px rgba(149, 149, 201, 0.24);
    display: flex;
    flex-flow: row nowrap;
@@ -2205,7 +2206,7 @@ input[type=text]:checked {
 .modal2 {
    z-index: 200;
    width: 100%;
-   max-width: 800px;
+   max-width: 870px;
    max-height: 800px;
    margin: 0 auto;
    transform: translate(-50%, -50%);
