@@ -5,10 +5,16 @@ const menu = document.querySelector('.nav__list');
 const closeBtn = document.querySelector('.close-btn');
 const links = document.querySelectorAll('nav ul li a');
 
-burger.addEventListener('click', e => menu.classList.toggle('open'));
-closeBtn.addEventListener('click', e => menu.classList.remove('open'));
-[...links].forEach(link => link.addEventListener('click', e => menu.classList.remove('open')));
+burger.addEventListener('click', event => menu.classList.toggle('open'));
+closeBtn.addEventListener('click', event => menu.classList.remove('open'));
+[...links].forEach(link => link.addEventListener('click', event => menu.classList.remove('open')));
 
+
+////////////////////////// header fon/////
+
+ $(window).on("scroll", function() {
+  $('.header').toggleClass("active2", $(this).scrollTop() > $(window).height() / 5);
+});
 //////////////////////accordion////////
 
 let acc = document.getElementsByClassName("accordion");
@@ -114,19 +120,25 @@ for (let link of document.getElementsByClassName('nav_link')){
 }
 
 
+////////////////////////// header fon/////
 
-window.addEventListener('scroll', function(e) {
-    let blocks = document.querySelectorAll('.block')
-    for (let block of blocks){
-    let pos = block.getBoundingClientRect()
-    let posTop = pos.top
-    let posHeight = pos.height
-    if (posTop < wHeight - posHeight && posTop > - posHeight){
-        block.classList.add('anim')
-    }
-   else {
-    block.classList.remove('anim')
-}
-    }
+ $(window).on("scroll", function() {
+  $('.header').toggleClass("active2", $(this).scrollTop() > $(window).height() / 5);
+});
 
-})
+
+// window.addEventListener('scroll', function(e) {
+//     let blocks = document.querySelectorAll('.block')
+//     for (let block of blocks){
+//     let pos = block.getBoundingClientRect()
+//     let posTop = pos.top
+//     let posHeight = pos.height
+//     if (posTop < wHeight - posHeight && posTop > - posHeight){
+//         block.classList.add('anim')
+//     }
+//    else {
+//     block.classList.remove('anim')
+// }
+//     }
+
+// })

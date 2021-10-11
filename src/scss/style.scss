@@ -177,7 +177,7 @@ main {
    display: flex;
    justify-content: space-between;
    align-items: center;
-
+   position: fixed;
 
    @media (max-width: 700px) {
       margin: 0 auto;
@@ -371,7 +371,7 @@ main {
 }
 
 .close-btn {
-   margin: 20px 0;
+   margin: 10px 0;
    border: none;
    background: none;
    color: #fff;
@@ -2384,4 +2384,8 @@ input[type=text]:checked {
 .icon-cheveron-outline-up {
    fill: $color_main;
 
+}
+
+.active2 {
+   background-color: #fff;
 }
